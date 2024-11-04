@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    background: rgb(60,148,176);
+    background: linear-gradient(146deg, rgba(60,148,176,1) 45%, rgba(145,252,188,1) 83%);
+}
+
+nav{
+    width: 100%;
+    height: 70px;
+    background: rgb(61, 76, 195);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 70px;
+
+}
+
+#logo{
+    font-size: 2em;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+#menu a{
+    text-decoration: none;
+    color: rgb(255, 254, 254);
+    font-size: 1.2em;
+    padding: 0.5rem 1rem;
+
+
+}
+
+#menu a:nth-child(5){
+    background: #0fa3e8;
+    border-radius: 8px;
+    margin: 0 1rem;
+
+}
+
+.menu i{
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+    cursor: pointer;
+
+}
+
+#menu a:hover{
+    background: rgb(27, 198, 56);
+    border-radius: 8px;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 70px;
+
+}
+
+.left{
+    flex-basis: 60%;
+    margin-right: 500px;
+    margin-top: 80px;
+
+}
+
+.right{
+    flex-basis: 40%;
+    padding-left: 59%;
+    margin-top: -600px;
+    margin-right: -150px;
+    
+}
+
+
+.left h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #ffffff;
+    
+
+}
+
+.left h1{
+    color: rgb(43, 42, 42);
+    font-size: 3em;
+    
+
+}
+
+.left p{
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 2.5rem;
+
+
+}
+
+#hire{
+    text-decoration: none;
+    background: #06e71d;
+    color: aliceblue;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    margin: 0 1rem;
+    margin-left: 2px;
+}
+
+#profile{
+    text-decoration: none;
+    color: #cdd6db;
+    font-size: 1.5rem;
+    border-radius: 8px;
+    border: 1px dashed white;
+    padding: .9rem 2rem;
+    margin: 0 1 rem;
+}
+
+#profile:hover{
+    color: #6ab04c;
+    background-color: #152f3f;
+}
+
+#bio{
+    cursor: pointer;
+    padding: 150px 70px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+
+}
+
+.leftbio{
+    flex-basis: 40%;
+
+}
+
+.rightbio{
+    flex-basis: 60%;
+    padding-left: 200%;
+    
+}
+
+.leftbio img{
+    width: 100%;
+    height: 700px;
+    border-radius: 8px;
+
+}
+
+.rightbio{
+    text-align: right;
+    padding: 0 40px;
+}
+.rightbio p{
+    margin: 15px 0;
+    line-height: 2.5rem;
+}
+
+.rightbio h1{
+    font-size: 3rem;
+}
+
+.info{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    text-align: left;
+    
+}
+
+#follow{
+    text-align: center;
+
+}
+
+#follow i{
+    color:#6ab04c;
+    font-size: 1.5rem;
+    margin:0 o.5rem;
+}
+
+.link-h{
+    text-align: center;
+    margin-top: 3rem;
+}
+
+#cv{
+    text-decoration: none;
+    color:#152f3f;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    margin: 0 1rem;
+    border: 1px dashed grey;
+
+}
+
+#services{
+
+    padding: 50px 70px;
+    width: 100%;
+    height: 100%;
+    background: rgb(235, 231, 231);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.intro h1{
+    font-size: 1.9rem;
+
+}
+
+.card{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+}
+
+.cardbody{
+    flex-basis: 30%;
+    background: #b7d0ca;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.cardbody h3{
+    font-size: 1.9rem;
+    margin: 0.5rem 0;
+}
+
+.cardbody i{
+    font-size: 2.3rem;
+    color: rgb(15, 158, 58);
+}
+
+footer {
+    width: 100%;
+    height: 70px;
+    background-color: rgb(26, 104, 213);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 70px;
+    
+
+}
+
+.btext a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.3em;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    margin-left: 60px;
+    margin-right: 30px;
+}
+
+</style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="logo">
+                <img src="gouri sign.png" height="69px" width="180">
+            </div>
+            <div id="menu">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Pertfolio</a>
+                <a href="#">Services</a>
+                <a href="#">Hire Me</a>
+
+                <i class="ri-search-line"></i>
+                <i class="ri-moon-fill"></i>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="left">
+                <h1>Hi, Gouramma.A</h1>
+                <h2>Frontend Web Developer</h2>
+                <p>             
+                    frontend Web Developer with a passion <br>for crafting user-friendly and visually captivating websites. In addition to my frontend expertise <br>I'm ensuring that your websites not only look great but also perform seamlessly.
+                </p>
+                <br><br>
+                <div>
+                    <a href="#" id="hire">Hire Me</a>
+                    <a href="#" id="profile">My Profile</a>
+                </div>
+            </div>
+            <div class="right">
+                <img src="images/ gouri pic2.png" height="400" width="400">
+            </div>
+
+        </div>
+    </header>
+
+    <section id="bio">
+        <div class="leftbio">
+            <img src="images/ gouri pic1.png" height="400" width="250">
+        </div>
+         <div class="rightbio">
+            
+                <P>My Biography</P>
+                <h1>A Passionate Web Developer, Database Enthusiast</h1>
+                <p>I'm a passionate web developer with a diverse skill set. I specialize in creating dynamic and engaging online experiences. As a database enthusiast, I excel at optimizing data structures and queries for seamless performance.</p>
+                <hr>
+         <div class="info">
+            <div>
+                <P><b>Name: </b>Gouramma.A</P>
+                <P><b>Email: </b>gowramma2303@gmail.com</P>
+            </div>
+            <div>
+                <P><b>From: </b>Bangalore</P>
+                <P><b>Github: </b>Gowri2303</P>
+            </div>
+        </div>
+        
+        <div id="follow">
+            <p><b>Let's Connect</b>
+            
+            <i class="ri-facebook-circle-fill"></i>
+            <i class="ri-whatsapp-line"></i>
+            <i class="ri-youtube-fill"></i>
+            <i class="ri-instagram-line"></i>
+            
+        </p>
+        
+        <div class="link-h">
+            <a href="#" id="hire">Hire Me</a>
+            <a href="#" id="cv">Download CV</a>
+        </div>
+
+    </section>
+    <section id="services">
+        <div class="intro">
+            <h1>Skills that work for you!</h1>
+            <div class="card">
+                <div class="cardbody">
+                    <i class="ri-global-line"></i>
+                    <h3>Web Development</h3>
+                    <p>Web designer crafting stunning, user-friendly sites with HTML, CSS, and responsive design.</p>
+                </div>
+
+                <div class="cardbody">
+                    <i class="ri-macbook-line"></i>
+                    <h3>UI Designer</h3>
+                    <p>Dedicated UI Designer crafting seamless, captivating digital experiences for you.</p>
+                </div>
+
+                <div class="cardbody">
+                     <i class="ri-database-2-line"></i>
+                    <h3>Database</h3>
+                    <p>MySQL database design, optimization, and maintenance for efficient and reliable data management.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="btext">
+            <a href="#">About Us</a>
+            <a href="#">Projects</a>
+            <a href="#">Skills</a>
+            <a href="#">Pertfolio</a>
+            <a href="#">Services</a>
+            <a href="#">Skills</a>
+            <a href="#">Contact Us</a>
+        </div>
+        </div>
+
+    </footer>
+    
+</body>
+</html>
